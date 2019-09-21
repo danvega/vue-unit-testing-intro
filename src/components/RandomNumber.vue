@@ -1,7 +1,7 @@
 <template>
   <div>
     <span class="number">{{ randomNumber }}</span>
-    <button class="btn" v-on:click="getRandomNumber">Generate Random Number</button>
+    <button class="btn" v-on:click="generateRandomNumber">Generate Random Number</button>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
     };
   },
   methods: {
-    getRandomNumber() {
+    generateRandomNumber() {
       this.randomNumber =
         Math.floor(Math.random() * (this.max - this.min + 1)) + this.min;
     }
