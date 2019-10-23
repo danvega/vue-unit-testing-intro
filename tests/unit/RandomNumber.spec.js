@@ -24,7 +24,6 @@ describe("RandomNumber", () => {
     });
     wrapper.find(".btn").trigger("click");
     const randomNumber = wrapper.vm.$data.randomNumber;
-    console.log(randomNumber);
     expect(randomNumber).toBeGreaterThanOrEqual(100);
     expect(randomNumber).toBeLessThan(201);
   });

@@ -1,7 +1,7 @@
 <template>
   <div>
     <span class="number">{{ randomNumber }}</span>
-    <button class="btn" v-on:click="generateRandomNumber">Generate Random Number</button>
+    <button class="btn" @click="generateRandomNumber">Generate Random Number</button>
   </div>
 </template>
 
